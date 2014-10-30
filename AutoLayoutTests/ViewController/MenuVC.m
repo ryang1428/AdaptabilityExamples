@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"Auto Layout Examples";
+    self.navigationItem.title = @"Adaptability Examples";
     
     UIColor *buttonColor = [UIColor colorWithRed:0.89 green:0.27 blue:0.27 alpha:1];
     

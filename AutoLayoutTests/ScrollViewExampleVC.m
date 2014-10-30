@@ -49,8 +49,9 @@
     NSDictionary *views = @{@"view1":view1, @"view2":view2, @"view3":view3};
     NSDictionary *metrics = @{@"viewWidth":@(320), @"viewHeight":@(250), @"vPad":@(20.f)};
 
-    //must give views a set width-- UIScrollView's do not play with auto layout well.
+    //must give views a set width-- UIScrollView's do not play well with auto layout
     // More info here: https://developer.apple.com/library/ios/releasenotes/General/RN-iOSSDK-6_0/index.html (search for auto layout)
+    
     [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view1(viewWidth)]|" options:0 metrics:metrics views:views]];
     [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view2(viewWidth)]|" options:0 metrics:metrics views:views]];
     [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view3(viewWidth)]|" options:0 metrics:metrics views:views]];
