@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SizeClassExampleVC : UIViewController
+@interface SizeClassExampleVC : UIViewController 
 
 @end

@@ -34,4 +34,14 @@
 }
 */
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    NSLog(@"size: %f, %f", size.width, size.height);
+}
+
+- (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+    NSLog(@"previousTraitCollection: %@", previousTraitCollection.description);
+    NSLog(@"newTraitCollection: %@", self.traitCollection.description);
+}
+
+
 @end

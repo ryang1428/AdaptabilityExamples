@@ -10,14 +10,14 @@
 	<string>AutoLayoutTests</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>44AC17C2789507EBBB64C23811C78A805C5DD0C1</key>
+		<key>2CFEA764726784E871705AA10B600CAFB0E4F84D</key>
 		<string>https://bitbucket.org/RyanG/autolayoutexamples.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>AutoLayoutTests.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>44AC17C2789507EBBB64C23811C78A805C5DD0C1</key>
+		<key>2CFEA764726784E871705AA10B600CAFB0E4F84D</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>44AC17C2789507EBBB64C23811C78A805C5DD0C1</string>
+	<string>2CFEA764726784E871705AA10B600CAFB0E4F84D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>44AC17C2789507EBBB64C23811C78A805C5DD0C1</string>
+			<string>2CFEA764726784E871705AA10B600CAFB0E4F84D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AutoLayoutTests</string>
 		</dict>

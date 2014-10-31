@@ -16,6 +16,11 @@
 
 - (void) loadView {
     [super loadView];
+    
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    self.view = [[UIView alloc] initWithFrame:screenBounds];
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)viewDidLoad {
@@ -24,13 +29,32 @@
     
     self.navigationItem.title = @"Views in ScrollView";
     
+    //subviews
     UIScrollView *scrollView = [UIScrollView new];
     [scrollView setBackgroundColor:[UIColor blueColor]];
     scrollView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:scrollView];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[scrollView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(scrollView)]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[scrollView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(scrollView)]];
     
+    UILabel *lblTitle = [UILabel new];
+    [lblTitle setBackgroundColor:[UIColor orangeColor]];
+    lblTitle.translatesAutoresizingMaskIntoConstraints = NO;
+    lblTitle.text = @"My Title, Centered.";
+    [lblTitle sizeToFit];
+    [self.view addSubview:lblTitle];
+
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[lblTitle][scrollView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(scrollView, lblTitle)]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[scrollView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(scrollView)]];
+
+    //center label horizontally. Cannot be cleanly done in VFL
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:lblTitle
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:1
+                                                           constant:0]];
+    
+    //scrollView subviews
     UIView *view1 = [UIView new];
     view1.translatesAutoresizingMaskIntoConstraints = NO;
     [view1 setBackgroundColor:[UIColor redColor]];
@@ -55,7 +79,7 @@
     [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view1(viewWidth)]|" options:0 metrics:metrics views:views]];
     [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view2(viewWidth)]|" options:0 metrics:metrics views:views]];
     [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view3(viewWidth)]|" options:0 metrics:metrics views:views]];
-    [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vPad-[view1(viewHeight)]-vPad-[view2(viewHeight)]-vPad-[view3(viewHeight)]|" options:0 metrics:metrics views:views]];
+    [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[view1(viewHeight)]-vPad-[view2(viewHeight)]-vPad-[view3(viewHeight)]|" options:0 metrics:metrics views:views]];
 }
 
 - (void)didReceiveMemoryWarning {
