@@ -44,8 +44,7 @@
         [self.dataArray2 addObject:[self randomLengthString]];
         
         int rWidth = arc4random_uniform(320);
-        int rHeight = arc4random_uniform(500);
-        [self.imgURLArray addObject:[NSString stringWithFormat:@"http://lorempixel.com/%d/%d/", rWidth, rHeight]];
+        [self.imgURLArray addObject:[NSString stringWithFormat:@"http://lorempixel.com/%d/%d/", rWidth, 128]];
     }
     
     //this forces the first visible cells to reload & layout correctly.
