@@ -87,12 +87,12 @@
                         <mask key="constraints">
                             <exclude reference="AFE-BL-gnP"/>
                             <exclude reference="qKy-JW-aPK"/>
+                            <exclude reference="IpV-jd-aRP"/>
+                            <exclude reference="vWT-Ir-0ec"/>
                             <exclude reference="Q9e-oC-MTk"/>
                             <exclude reference="yuO-X4-0G2"/>
                             <exclude reference="1dB-g5-G3c"/>
                             <exclude reference="Wuk-rf-GdF"/>
-                            <exclude reference="IpV-jd-aRP"/>
-                            <exclude reference="vWT-Ir-0ec"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=compact-widthClass=compact">

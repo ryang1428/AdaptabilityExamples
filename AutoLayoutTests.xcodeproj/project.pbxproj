@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3013210D1A0803E500EA6752 /* CollectionViewExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3013210C1A0803E500EA6752 /* CollectionViewExampleVC.m */; };
+		301321111A080A8C00EA6752 /* AutoLayoutCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 301321101A080A8C00EA6752 /* AutoLayoutCollectCell.m */; };
 		30AE287319FABBE600BE5663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AE287219FABBE600BE5663 /* Foundation.framework */; };
 		30AE287519FABBE600BE5663 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AE287419FABBE600BE5663 /* CoreGraphics.framework */; };
 		30AE287719FABBE600BE5663 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AE287619FABBE600BE5663 /* UIKit.framework */; };
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3013210B1A0803E500EA6752 /* CollectionViewExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewExampleVC.h; path = ViewController/CollectionViewExampleVC.h; sourceTree = "<group>"; };
+		3013210C1A0803E500EA6752 /* CollectionViewExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewExampleVC.m; path = ViewController/CollectionViewExampleVC.m; sourceTree = "<group>"; };
+		3013210F1A080A8C00EA6752 /* AutoLayoutCollectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoLayoutCollectCell.h; path = Cells/AutoLayoutCollectCell.h; sourceTree = "<group>"; };
+		301321101A080A8C00EA6752 /* AutoLayoutCollectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutoLayoutCollectCell.m; path = Cells/AutoLayoutCollectCell.m; sourceTree = "<group>"; };
 		30AE286F19FABBE600BE5663 /* AutoLayoutTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AE287219FABBE600BE5663 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30AE287419FABBE600BE5663 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -96,6 +102,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3013210E1A0803ED00EA6752 /* CollectionViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				3013210B1A0803E500EA6752 /* CollectionViewExampleVC.h */,
+				3013210C1A0803E500EA6752 /* CollectionViewExampleVC.m */,
+				3013210F1A080A8C00EA6752 /* AutoLayoutCollectCell.h */,
+				301321101A080A8C00EA6752 /* AutoLayoutCollectCell.m */,
+			);
+			name = CollectionViewExample;
+			sourceTree = "<group>";
+		};
 		30AE286619FABBE600BE5663 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +150,7 @@
 		30AE287819FABBE600BE5663 /* AutoLayoutTests */ = {
 			isa = PBXGroup;
 			children = (
+				3013210E1A0803ED00EA6752 /* CollectionViewExample */,
 				30F394501A000762008629BE /* ScrollViewExample */,
 				30F394521A00078A008629BE /* SizeClassExample */,
 				30F394511A000770008629BE /* TableViewExample */,
@@ -344,8 +362,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3013210D1A0803E500EA6752 /* CollectionViewExampleVC.m in Sources */,
 				30F3944E1A000418008629BE /* SizeClassExampleVC.m in Sources */,
 				30F3944919FFD6C7008629BE /* AutoLayoutCell.m in Sources */,
+				301321111A080A8C00EA6752 /* AutoLayoutCollectCell.m in Sources */,
 				30AE288C19FABBE600BE5663 /* ScrollViewExampleVC.m in Sources */,
 				30CAC55019FEDF0B00640B02 /* MenuVC.m in Sources */,
 				30F3944419FFCBA4008629BE /* TableViewExampleVC.m in Sources */,
