@@ -39,7 +39,7 @@ const CGFloat cellHeight = 300;
     [aFlowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:aFlowLayout];
     self.collectionView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.collectionView setBackgroundColor:[UIColor colorWithRed:0.55 green:0.73 blue:0.96 alpha:1]];
+    self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerClass:[AutoLayoutCollectCell class] forCellWithReuseIdentifier:@"CustomCell"];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
@@ -94,7 +94,7 @@ const CGFloat cellHeight = 300;
 #pragma mark – UICollectionViewDelegateFlowLayout
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(0, 0, 0, 0);
+    return UIEdgeInsetsZero;//UIEdgeInsetsMake(0, 0, 0, 0);
 }
 
 

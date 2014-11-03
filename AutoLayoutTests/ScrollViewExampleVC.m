@@ -39,7 +39,7 @@
     [lblTitle setBackgroundColor:[UIColor orangeColor]];
     lblTitle.translatesAutoresizingMaskIntoConstraints = NO;
     lblTitle.text = @"My Title, Centered.";
-    [lblTitle sizeToFit];
+    //[lblTitle sizeToFit];   not needed with auto layout
     [self.view addSubview:lblTitle];
 
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[lblTitle][scrollView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(scrollView, lblTitle)]];

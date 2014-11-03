@@ -10,4 +10,8 @@
 
 @interface AutoLayoutCollectCell : UICollectionViewCell
 
+@property (nonatomic, strong) UILabel *nameLabel;
+@property (nonatomic, strong) UILabel *priceLabel;
+
+
 @end
