@@ -8,6 +8,7 @@
 
 #import "CollectionViewExampleVC.h"
 #import "AutoLayoutCollectCell.h"
+
 const CGFloat cellHeight = 300;
 
 @interface CollectionViewExampleVC ()
@@ -71,7 +72,8 @@ const CGFloat cellHeight = 300;
     if(!cell) {
         cell = [AutoLayoutCollectCell new];
     }
-    cell.backgroundColor = [UIColor whiteColor];
+    
+    [cell.infoView setContentOffset:CGPointMake(0, 0)];
     return cell;
 }
 

@@ -10,8 +10,11 @@
 
 @interface AutoLayoutCollectCell : UICollectionViewCell
 
-@property (nonatomic, strong) UILabel *nameLabel;
-@property (nonatomic, strong) UILabel *priceLabel;
+@property (nonatomic, strong) UILabel *lblName;
+@property (nonatomic, strong) UILabel *lblPrice;
+@property (nonatomic, strong) UIScrollView *infoView;
+
+@property (nonatomic, strong) UIButton *btnHeart;
 
 
 @end
